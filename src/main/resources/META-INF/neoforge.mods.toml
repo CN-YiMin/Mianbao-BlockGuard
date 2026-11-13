@@ -1,0 +1,44 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="mianbao_blockguard"
+version="1.0.0"
+displayName="Mianbao BlockGuard"
+authors="CN-YiMin"
+description='''
+Disables block destruction caused by Mianbao's NewModernWarfare (mianbaos_modernwarfare).
+
+All interception happens on discrete game events (explosion finalisation, a direct
+destroyBlock call, a nuclear wave being enqueued, or a fire block being placed).
+There is no per-tick scan, and ordinary block updates pay only one
+non-fire type check (disable with protectFire=false).
+'''
+
+[[mixins]]
+config="mianbao_blockguard.mixins.json"
+
+[[mixins]]
+config="mianbao_blockguard.mod.mixins.json"
+
+[[dependencies.mianbao_blockguard]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.230,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.mianbao_blockguard]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.mianbao_blockguard]]
+modId="mianbaos_modernwarfare"
+type="required"
+versionRange="[2.7.0,2.8.0)"
+ordering="AFTER"
+side="BOTH"

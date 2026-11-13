@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.freightera.mianbaoguard.mixin.mod",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "Explosionblastwork2ProcedureMixin",
+    "ExplosionscorchedProcedureMixin",
+    "FireballScorchMixin",
+    "IncendiaryAirSetMixin",
+    "ManagedNuclearSequenceSchedulerMixin",
+    "NuclearTerrainSchedulerMixin",
+    "NuclearWaveSchedulerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

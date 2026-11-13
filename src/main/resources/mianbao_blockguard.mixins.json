@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.freightera.mianbaoguard.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ExplosionMixin",
+    "LevelDestroyMixin",
+    "LevelFireMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
